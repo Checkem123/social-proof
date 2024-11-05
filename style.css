@@ -6,6 +6,138 @@
     box-sizing: border-box;
 }
 
-h1 {
-    color: red;
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    /* background-color: #333; */
+    height: 100vh;
+}
+
+.container {
+    width: 1440px;
+    height: 800px;
+    margin: auto;
+    /* background-color: #9d9d9d; */
+    padding: 116px 164px 99px 164px;
+}
+
+main {
+    border: 1px solid red;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.users_love {
+    border: 1px solid green;
+    width: 410px;
+    height: 240px;
+}
+
+.users_love h1 {
+    font-family: "League Spartan", serif;
+    line-height: 0.85;
+    letter-spacing: -2px;
+    font-size: 56px;
+    color: var(--Very-Dark-Magenta);
+}
+
+.users_love p {
+    font-family: "League Spartan", serif;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+    font-size: 19px;
+    color: var(--Very-Dark-Magenta);
+    margin-top: 28px;
+}
+
+.rates {
+    border: 1px solid var(--Dark-Grayish-Magenta);
+    width: 540px;
+    /* height: 240px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 16px;
+}
+
+.rate {
+    display: flex;
+    padding: 18px;
+    width: 444px;
+    align-items: center;
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 8px;
+}
+
+.rates .rate_top {
+    align-self: start;
+}
+
+.rates .rate_middle {
+    align-self: center;
+}
+
+.rates .rate_bot {
+    align-self: end;
+}
+
+.stars {
+    margin: auto 0 auto 11px;
+}
+
+.stars img {
+    margin-left: 3.8px;
+}
+
+.rate p {
+    margin-left: 31px;
+    font-family: "League Spartan", serif;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    font-size: 17px;
+}
+
+.bottom {
+    border: 1px solid black;
+    display: flex;
+    height: 266px;
+    gap: 32px;
+}
+
+.bottom .bottom_bloc {
+    border: 1px solid red;
+    height: 232px;
+    width: 348px;
+    border-radius: 10px;
+    background-color: var(--Very-Dark-Magenta);
+}
+
+.bottom .bottom_left {
+    align-self: flex-start;
+}
+
+.bottom .bottom_middle {
+    align-self: center;
+}
+
+.bottom .bottom_right {
+    align-self: flex-end;
 }
