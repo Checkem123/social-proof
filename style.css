@@ -8,7 +8,7 @@
 
 :root {
     --Very-Dark-Magenta: hsl(300, 43%, 22%);
-    --Soft-Pink: hsl(333, 80%, 67%);
+    --Soft-Pink: hsl(333, 60%, 61%);
 
     --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
     --Light-Grayish-Magenta: hsl(300, 24%, 96%);
@@ -128,6 +128,7 @@ main {
     width: 348px;
     border-radius: 10px;
     background-color: var(--Very-Dark-Magenta);
+    padding: 38px 30px;
 }
 
 .bottom .bottom_left {
@@ -140,4 +141,42 @@ main {
 
 .bottom .bottom_right {
     align-self: flex-end;
+}
+
+.bottom .infos {
+    display: flex;
+    align-items: flex-end;
+}
+
+.bottom .infos img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+h2,
+h3 {
+    font-family: "League Spartan", serif;
+    font-size: 16px;
+    margin-left: 24px;
+    letter-spacing: 0.45px;
+}
+
+.bottom .infos h2 {
+    color: var(--White);
+    font-weight: 600;
+}
+
+.bottom .infos h3 {
+    margin-top: 2px;
+    color: var(--Soft-Pink);
+    font-weight: 400;
+}
+
+.bottom .bottom_bloc p {
+    margin-top: 26px;
+    color: var(--White);
+    font-family: "League Spartan", serif;
+    line-height: 1.35;
+    letter-spacing: 0.3px;
 }
